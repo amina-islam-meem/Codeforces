@@ -14,9 +14,13 @@ int main()
     int T; cin >>  T;
     while(T--)
     {
-        int n; cin >> n;
-
-        
+        ll n;cin >> n;
+        ll y,r; cin >> y >> r;
+        ll sum = (y/2)+r;
+        if(sum > n)
+        cout << n << nl;
+        else
+        cout << sum << nl;
     }
     return 0;
 }
