@@ -1,0 +1,13 @@
+# Windows compiled files
+*.exe
+
+# Linux / Mac compiled binaries (just in case)
+*.out
+a.out
+
+# Object files
+*.o
+
+# Debug / temp
+*.log
+*.tmp

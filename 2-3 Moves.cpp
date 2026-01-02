@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define yes cout<<"YES"<<'\n';
+#define no cout<<"NO"<<'\n';
+#define nl '\n'
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int T; cin >>  T;
+    while(T--)
+    {
+        int an;
+        int n; cin >> n;
+        if(n == 1) {
+                cout << 2 << nl;
+                continue;
+        }
+
+           cout << (n+2)/3 << nl;
+    }
+    return 0;
+}
