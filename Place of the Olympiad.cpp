@@ -11,7 +11,7 @@ bool check(ll mid,ll n,ll m,ll k)
     ll p = m /(mid + 1);
     ll r = m % (mid + 1);
 
-    ll count = p* mid+ min(mid, r);
+    ll count = p*mid+ min(mid, r);
 
     return count >= (k + n - 1) / n;
 }
