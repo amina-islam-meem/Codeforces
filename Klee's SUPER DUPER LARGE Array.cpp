@@ -26,7 +26,7 @@ bool check(ll mid)
 
 bool check1(ll mid)
 {
-    if (sum(k, mid - 1) >= sum(mid, k + n - 1))
+    if (sum(k, mid-1) >= sum(mid, k + n - 1))
         return true;
     else
         return false;
@@ -72,7 +72,7 @@ int main()
             l1= mid;
     }
 
-    cout << min(sum(l + 1, n + k - 1) - sum(k, l), sum(k, r1 - 1) - sum(r1, n + k - 1)) << endl;
+    cout << min(sum(l + 1, n + k - 1) - sum(k, l), sum(k, r1 - 1) -sum(r1, n + k - 1)) << nl;
 
 
     }
