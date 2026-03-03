@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define srt(v) sort(v.begin(),v.end());
+#define rsrt(v) sort(v.rbegin(),v.rend());
+#define yes cout<<"YES"<<'\n';
+#define no cout<<"NO"<<'\n';
+#define nl '\n'
+
+using vi = vector<int>;
+using vll = vector<long long>;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int n,m,k;
+    cin >> n >> m >> k;
+
+    vi v(m);
+    for(int i = 0 ; i <= m ; i++ )
+    {
+        cin >> v[i];
+    }
+    int last = v[m];
+
+    int count = 0;
+    for(int i = 0 ; i < m ;i++)
+    {
+        int p = __builtin_popcount(v[i]^last);
+
+        if(p <= k)
+            count++;
+    }
+
+  cout << count << nl;
+
+
+    return 0;
+}
