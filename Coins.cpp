@@ -7,10 +7,14 @@ int main()
     {
         long long n,k;
         cin>>n>>k;
-        if(k%2==0 && n%2==0)
+
+
+        if(n%2== 0  || k%2 != 0)
             cout<<"Yes"<<endl;
         else
             cout<<"No"<<endl;
     }
     return 0;
 }
+
+
