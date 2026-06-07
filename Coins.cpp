@@ -7,8 +7,6 @@ int main()
     {
         long long n,k;
         cin>>n>>k;
-
-
         if(n%2== 0  || k%2 != 0)
             cout<<"Yes"<<endl;
         else
@@ -16,5 +14,3 @@ int main()
     }
     return 0;
 }
-
-
